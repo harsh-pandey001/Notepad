@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad util</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h1>Notes-Editor</h1>
+      <label class="switch">
+        <span id="stch">Enable Dark mode</span
+        ><input type="checkbox" onclick="myFunction()" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <form>
+      <div class="upper">
+        Font - style :
+        <select id="style">
+          <option value="">Arial</option>
+          <option value="">Verdana (sans-serif)</option>
+          <option value="">Tahoma (sans-serif)</option>
+          <option value="">Trebuchet MS (sans-serif)</option>
+          <option value="">Times New Roman (serif)</option>
+          <option value="">Georgia (serif)</option>
+          <option value="">Garamond (serif)</option>
+          <option value="">Courier New (monospace)</option>
+          <option value="">Brush Script MT (cursive)</option>
+        </select>
+
+        Font Size:
+        <select id="style">
+          <option value="">10</option>
+          <option value="">12</option>
+          <option value="">14</option>
+          <option value="">16</option>
+          <option value="">18</option>
+          <option value="">20</option>
+          <option value="">22</option>
+          <option value="">24</option>
+          <option value="">26</option>
+        </select>
+        <textarea
+        class="add-list"
+          id="note"
+          cols="150"
+          rows="10"
+          placeholder="Enter here"
+        ></textarea>
+      </div>
+
+      <div class="lower">
+        <button class="btn" type="button" onclick="copy()">Copy</button>
+        <button class="btn" type="button" onclick="boldText()">
+          <strong>Bold</strong>
+        </button>
+        <button class="btn" type="button" onclick="italicText()">Italic</button>
+        <button class="btn" type="button" onclick="underlineText()">
+          Underline
+        </button>
+        <button class="btn" type="reset" id="reset">clear</button>
+        <button class="btn" id="submit" type="button" onclick="">Add Note</button>
+      </div>
+    </form>
+    <ul id="list">
+	
+    </ul>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
