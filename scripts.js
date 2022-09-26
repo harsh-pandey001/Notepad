@@ -1,3 +1,13 @@
+// font change
+function updateh1family() {
+    var selector = document.getElementById('selecth1FontFamily');
+    var family = selector.options[selector.selectedIndex].value;
+    var h1 = document.getElementById('note')
+    h1.style.fontFamily = family;
+  }
+
+// font size
+
 function copy()
 {
     let copyText = document.getElementById("note");
@@ -54,6 +64,7 @@ function myFunction() {
 
 
 //  new notes  
+
 var listArr = [];
 var inputDOM = document.querySelector('.add-list');
 var button = document.querySelector('#submit');
